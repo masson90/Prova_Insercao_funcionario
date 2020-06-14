@@ -11,7 +11,7 @@ namespace Insercao_funcionario
 
         #region Parâmetros de Conexão
         private static string Server = "localhost";
-        private static string Database = "web_session";
+        private static string Database = "empresa2";
         private static string User = "root";
         private static string Password = "root";
 

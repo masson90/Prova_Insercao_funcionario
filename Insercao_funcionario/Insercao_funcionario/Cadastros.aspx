@@ -33,7 +33,7 @@
                     <label>Data de Nascimento:</label>
                     <asp:RequiredFieldValidator ID="rfvNasc" ControlToValidate="txtNasc"
                         ErrorMessage="*" ForeColor="Red" runat="server"></asp:RequiredFieldValidator>
-                    <asp:TextBox ID="txtNasc" runat="server" MaxLength="3" CssClass="form-control"></asp:TextBox>
+                    <asp:TextBox ID="txtNasc" runat="server" MaxLength="50" CssClass="form-control"></asp:TextBox>
                 </div>
             </div>
 
@@ -43,49 +43,49 @@
                     <label>Numero da Carteira:</label>
                     <asp:RequiredFieldValidator ID="rfvCarteira" ControlToValidate="txtCarteira"
                         ErrorMessage="*" ForeColor="Red" runat="server"></asp:RequiredFieldValidator>
-                    <asp:TextBox ID="txtCarteira" runat="server" MaxLength="8" CssClass="form-control"></asp:TextBox>
+                    <asp:TextBox ID="txtCarteira" runat="server" MaxLength="50" CssClass="form-control"></asp:TextBox>
                 </div>
 
                 <div class="col-md-3">
                     <label>Telefone Fixo:</label>
                     <asp:RequiredFieldValidator ID="rfvTel" ControlToValidate="txtTel"
                         ErrorMessage="*" ForeColor="Red" runat="server"></asp:RequiredFieldValidator>
-                    <asp:TextBox ID="txtTel" runat="server" MaxLength="11" CssClass="form-control"></asp:TextBox>
+                    <asp:TextBox ID="txtTel" runat="server" MaxLength="20" CssClass="form-control"></asp:TextBox>
                 </div>
 
                 <div class="col-md-3">
                     <label>Telefone Celular:</label>
                     <asp:RequiredFieldValidator ID="rfvCel" ControlToValidate="txtCel"
                         ErrorMessage="*" ForeColor="Red" runat="server"></asp:RequiredFieldValidator>
-                    <asp:TextBox ID="txtCel" runat="server" MaxLength="11" CssClass="form-control"></asp:TextBox>
+                    <asp:TextBox ID="txtCel" runat="server" MaxLength="20" CssClass="form-control"></asp:TextBox>
                 </div>
 
                 <div class="col-md-5">
                     <label>E-mail:</label>
                     <asp:RequiredFieldValidator ID="rfvEmail" ControlToValidate="txtEmail"
                         ErrorMessage="*" ForeColor="Red" runat="server"></asp:RequiredFieldValidator>
-                    <asp:TextBox ID="txtEmail" runat="server" MaxLength="11" CssClass="form-control"></asp:TextBox>
+                    <asp:TextBox ID="txtEmail" runat="server" MaxLength="50" CssClass="form-control"></asp:TextBox>
                 </div>
 
                 <div class="col-md-5">
                     <label>Endereço:</label>
                     <asp:RequiredFieldValidator ID="rfvEndereco" ControlToValidate="txtendereco"
                         ErrorMessage="*" ForeColor="Red" runat="server"></asp:RequiredFieldValidator>
-                    <asp:TextBox ID="txtEndereco" runat="server" MaxLength="11" CssClass="form-control"></asp:TextBox>
+                    <asp:TextBox ID="txtEndereco" runat="server" MaxLength="50" CssClass="form-control"></asp:TextBox>
                 </div>
 
                 <div class="col-md-2">
                     <label>Número da casa:</label>
                     <asp:RequiredFieldValidator ID="rfvNcasa" ControlToValidate="txtNcasa"
                         ErrorMessage="*" ForeColor="Red" runat="server"></asp:RequiredFieldValidator>
-                    <asp:TextBox ID="txtNcasa" runat="server" MaxLength="11" CssClass="form-control"></asp:TextBox>
+                    <asp:TextBox ID="txtNcasa" runat="server" MaxLength="6" CssClass="form-control"></asp:TextBox>
                 </div>
 
             </div>           
 
             <div class="row" style="margin-top: 15px">
                 <div class="col-md-12 text-center">
-                    <asp:Button ID="btnSalvar" CssClass="btn btn-primary" runat="server" Text="Salvar" />
+                    <asp:Button ID="btnSalvar" CssClass="btn btn-primary" runat="server" Text="Salvar" OnClick="btnSalvar_Click" />
                 </div>
             </div>
 
