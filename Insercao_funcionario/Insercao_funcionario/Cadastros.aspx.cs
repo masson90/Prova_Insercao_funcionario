@@ -43,9 +43,19 @@ namespace Insercao_funcionario
                 Conexao.Conectar();
                 cmd.ExecuteNonQuery();
                 lblResultado.CssClass = "text-success";
-                lblResultado.Text = "Dados cadastrados com suxexuyuyuyuyu!";
+                lblResultado.Text = "Dados cadastrados com sucesso!";
 
-                
+                txtNome.Text = " ";
+                txtSexo.Text = " ";
+                txtNasc.Text = " ";
+                txtCarteira.Text = " ";
+                txtTel.Text = " ";
+                txtCel.Text = " ";
+                txtEmail.Text = " ";
+                txtEndereco.Text = " ";
+                txtNcasa.Text = " ";
+
+
             }
             catch (Exception ex)
             {
